@@ -31,7 +31,7 @@ if (isset($_POST['signup'])) {
 		$query_run = mysqli_query($con, $query);
 		if ($query_run) {
 			$_SESSION['agencyxy'] = $_POST['username'];
-			header('location:../index.php');
+			header('location:dashboard_agency.php');
 		} else {
 			echo "error";
 		}
