@@ -3,4 +3,4 @@
 - Agency
 
 # The schema
-![database](C:\XAMPP\htdocs\car-rental-final\images\database.png)
+![database](https://github.com/Codessmasher/car_rental/images/database.png)
