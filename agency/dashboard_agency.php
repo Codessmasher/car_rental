@@ -154,7 +154,7 @@ if (!isset($_SESSION['agencyxy'])) {
               </form>
               <form action="delete_cars.php" method="post">
                 <input type="hidden" name='id' value="<?php echo $row['id'] ?>">
-                <th><button type="delete" name="delete" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> DELETE </button></th>
+                <th><button type="submit" name="delete" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> DELETE </button></th>
               </form>
               </form>
             </tr>

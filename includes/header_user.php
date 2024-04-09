@@ -18,41 +18,44 @@ require('connection.inc.php');
 
   <title>Car Dashboard</title>
 </head>
- 
-  <body>
-    <nav>
-      <div class="logo">Car Rental</div>
-      <input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a href="../index.php">Home</a></li>
-        <li><a href="../user/cars.php">Vehicles</a></li>
-        <li><a href="../user/user_order.php">Orders</a></li> 
-        <div class="dropdown">
-          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <?php if (isset($_SESSION['usercvgfth'])) {
-              echo "" . $_SESSION['usercvgfth'] . "";
-            } else {
-              echo "Guest";
-            } ?>
-          </button>
-          <div class="dropdown-menu mr-5" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="login_user.php">User Login</a>
-            <a class="dropdown-item" href="../agency/login_agency.php">Agency Login</a>
-            <a class="dropdown-item" href="logout_user.php"><?php if (isset($_SESSION['usercvgfth'])) {
-                                                              echo "logout";
-                                                            } else {
-                                                              echo "";
-                                                            } ?></a> 
-          </div>
-        </div>
-      </ul>
-    </nav>
-  </body>
 
-  </html>
+<body>
+  <nav>
+    <div class="logo">Car Rental</div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a href="../index.php">Home</a></li>
+      <li><a href="../user/cars.php">Vehicles</a></li>
+      <li><a href="../user/user_order.php">Orders</a></li>
+      <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <?php
+          if (isset($_SESSION['usercvgfth'])) {
+            echo "" . $_SESSION['usercvgfth'] . "";
+          } else {
+          ?>
+            <div class="dropdown-menu mr-5" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="../user/login_user.php">User Login</a>
+              <a class="dropdown-item" href="../agency/login_agency.php">Agency Login</a>
+              <a class="dropdown-item" href="../user/logout_user.php"><?php if (isset($_SESSION['usercvgfth'])) {
+                                                                echo "logout";
+                                                              } else {
+                                                                echo "";
+                                                              } ?></a>
+            </div>
+          <?php
+          }
+          ?>
+        </button>
+      </div>
+    </ul>
+  </nav>
+</body>
+
+</html>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
