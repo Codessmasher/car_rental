@@ -16,14 +16,12 @@ if(isset($_POST['login'])) {
           header('location:../index.php'); 
       }
       else{
-          echo "error";
+          echo "<h1 align='center'  class='text-danger'>Wrong Username or Password</h1>";
       }
       
 }
  
 ?>
-
-
  
 	<div class="container h-100">
 		<div class="d-flex justify-content-center h-100">
