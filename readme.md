@@ -3,4 +3,5 @@
 - Agency
 
 # The schema
-![database](https://github.com/Codessmasher/car_rental/images/database.png)
+[![database]([https://github.com/Codessmasher/car_rental/images/database.png](https://raw.githubusercontent.com/Codessmasher/car_rental/master/images/database.png))
+](https://raw.githubusercontent.com/Codessmasher/car_rental/master/images/database.png)
