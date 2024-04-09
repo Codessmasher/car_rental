@@ -1,0 +1,13 @@
+.card{
+    width: 30rem; 
+} 
+@media (max-width: 576px) {
+	#responsive{
+		display: grid;
+		grid-template-columns: 1fr; 
+        gap: 1rem;
+	}
+    .card{
+        min-width: 60%;
+    }
+}

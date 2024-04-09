@@ -5,6 +5,9 @@ html {
 	height: 100%;
 	background: #60a3bc !important;
 }
+nav,nav ul{
+z-index: 7777;	
+}
 .user_card {
 	height: 400px;
 	width: 350px;
